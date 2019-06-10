@@ -1,0 +1,31 @@
+framework module Realm {
+    umbrella header "/src/realm-cocoa/Realm/Realm.h"
+
+    export *
+    module * { export * }
+
+    explicit module Private {
+        header "/src/realm-cocoa/Realm/RLMAccessor.h"
+        header "/src/realm-cocoa/Realm/RLMArray_Private.h"
+        header "/src/realm-cocoa/Realm/RLMCollection_Private.h"
+        header "/src/realm-cocoa/Realm/RLMListBase.h"
+        header "/src/realm-cocoa/Realm/RLMObject_Private.h"
+        header "/src/realm-cocoa/Realm/RLMObjectBase_Dynamic.h"
+        header "/src/realm-cocoa/Realm/RLMObjectBase_Private.h"
+        header "/src/realm-cocoa/Realm/RLMObjectSchema_Private.h"
+        header "/src/realm-cocoa/Realm/RLMObjectStore.h"
+        header "/src/realm-cocoa/Realm/RLMOptionalBase.h"
+        header "/src/realm-cocoa/Realm/RLMProperty_Private.h"
+        header "/src/realm-cocoa/Realm/RLMRealm_Private.h"
+        header "/src/realm-cocoa/Realm/RLMRealmConfiguration_Private.h"
+        header "/src/realm-cocoa/Realm/RLMResults_Private.h"
+        header "/src/realm-cocoa/Realm/RLMSchema_Private.h"
+        header "/src/realm-cocoa/Realm/RLMSyncConfiguration_Private.h"
+        header "/src/realm-cocoa/Realm/RLMSyncUtil_Private.h"
+    }
+
+    explicit module Dynamic {
+        header "/src/realm-cocoa/Realm/RLMRealm_Dynamic.h"
+        header "/src/realm-cocoa/Realm/RLMObjectBase_Dynamic.h"
+    }
+}
